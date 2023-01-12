@@ -1,3 +1,3 @@
 # GC-Excercices
-GC homeworks first assignment
+GC homeworks and assignments
 
