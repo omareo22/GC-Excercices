@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="money.js">
+    <link rel="stylesheet" href="money.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class='form'>
+        <div class='coins'>
+            How Many?
+            <input id='coinAmount' placeholder="0">
+        </div> 
+        <div class='coins'>
+            Which Coin?
+            <select id="coinType">
+                <option value="$0.01">Penny</option>
+                <option value="$0.05">Nickel</option>
+                <option value="$0.10">Dime</option>
+                <option value="$0.25">Quarter</option>
+            </select>
+        </div>
+        <button id="makeMoney">Make Money</button>
+        <div id="coinContainer">
+
+        </div>
+    </form>
+
+    <script src="money.js"></script>
+</body>
+
+</html>

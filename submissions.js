@@ -30,12 +30,20 @@ function deleteSubmissionByIndex (array,index){
 }
 
 //delete by name
-function deleteSubmissionByName(array, name) {
-    const findName = array.findindex(name);
-    if (findName === name) {
-        array.splice()
+// function deleteSubmissionByName(array, name) {
+//     const findName = array.findindex(name);
+//     if (findName === name) {
+//         array.splice()
+//     }
+//}
+
+//lowest score
+function findLowestScore (array){
+    for (const score of array){
+        min = math.min(min, score)
     }
 }
+findLowestScore (submissions)
+console.log(findLowestScore)
 
-deleteSubmissionByName (submissions,'Joe')
-console.log (submissions)
+
