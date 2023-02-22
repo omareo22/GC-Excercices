@@ -1,7 +1,7 @@
 (function () {
 
     const howMany = document.getElementById('coinAmount');
-    const whichCoin = document.getElementById('coinType');
+    const coinType = document.getElementById('coinType');
     const makeMoney = document.getElementById('makeMoney');
     const coinContainer = document.getElementById("coinContainer");
     const total = document.getElementById('total');
@@ -12,8 +12,8 @@
       for (let i = 0; i < howMany.value; i++) {
         const newCoin = document.createElement("p");
         newCoin.classList.add("newCoin");
-        newCoin.classList.add(whichCoin.value);
-        newCoin.textContent = whichCoin.value;
+        newCoin.classList.add(coinType.value);
+        newCoin.textContent = coinType.value;
         coinContainer.append(newCoin);
         newCoin.addEventListener('click',(e) => {
           e.target.remove();
@@ -21,7 +21,7 @@
           total.value = totalAmount;
         })
       }
-      totalAmount = totalAmount + getTotal("+", howMany.value,whichCoin.value);
+      totalAmount = totalAmount + getTotal("+", howMany.value,coinType.value);
       total.value = totalAmount;
     });
   }())

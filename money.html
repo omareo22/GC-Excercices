@@ -13,11 +13,12 @@
 <body>
     <form class='form'>
         <div class='coins'>
-            How Many?
-            <input id='coinAmount' placeholder="0">
-        </div> 
+           <label for="coinAmount"> How Many? </label>
+            <input id='coinAmount' placeholder="0" type="number">
+        </div>  
+
         <div class='coins'>
-            Which Coin?
+            <label for="coinType"> Which Coin? </label>
             <select id="coinType">
                 <option value="$0.01">Penny</option>
                 <option value="$0.05">Nickel</option>
@@ -25,12 +26,16 @@
                 <option value="$0.25">Quarter</option>
             </select>
         </div>
+
+
         <button id="makeMoney">Make Money</button>
         <div id="coinContainer">
-
         </div>
     </form>
-
+    <div class = 'Quarter'></div>
+    <div class = 'Nickel'></div>
+    <div class="Dime"></div>
+    <div class="Penny"></div>
     <script src="money.js"></script>
 </body>
 
